@@ -1,0 +1,32 @@
+name: contact_graspnet_env5
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+  - nvidia
+dependencies:
+  - python=3.9
+  - cudatoolkit=11.2
+  - cudnn=8.1
+  - pyqt=5.9.2
+  - qt=5.9.7
+  - tqdm
+  - trimesh
+  - numpy=1.19.3
+  - pip
+  - pip:
+    - scipy==1.9.2
+    - matplotlib==3.6
+    - rtree
+    - rospkg
+    - tensorboard
+    - tensorflow-estimator==2.5.0
+    - tensorflow-gpu==2.5.0
+    - termcolor
+    - python-fcl
+    - rospkg
+    - opencv-python-headless
+    - pillow
+    - pyrender
+    - mayavi
+    - rospkg
