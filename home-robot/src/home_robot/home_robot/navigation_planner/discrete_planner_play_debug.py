@@ -94,8 +94,7 @@ class DiscretePlanner:
         self.default_vis_dir = f"{dump_location}/images/{exp_name}"
         os.makedirs(self.default_vis_dir, exist_ok=True)
         
-        self.default_local_map_dir = f"/aiarena/gpfs/code/code/OVMM/home-robot/train_data/local_map/{exp_name}"
-        # self.default_local_map_dir = f"{dump_location}/local_map/{exp_name}"
+        self.default_local_map_dir = f"{dump_location}/local_map/{exp_name}"
         os.makedirs(self.default_local_map_dir, exist_ok=True)
 
         self.map_size_cm = map_size_cm
@@ -786,7 +785,7 @@ class DiscretePlanner:
         # You must move at least 5 cm when doing forward actions
         # Otherwise we assume there has been a collision
         if abs(x1 - x2) < 0.05 and abs(y1 - y2) < 0.05:
-            print("collision")
+            # print("collision")
             self.col_width += 2
             if self.col_width == 7:
                 length = 4

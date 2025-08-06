@@ -711,7 +711,7 @@ class ObjectNavAgent(Agent):
         
         self.semantic_map_visted_count += self.semantic_map.global_map[0,2]
         max_visit = torch.max(self.semantic_map_visted_count)
-        print("max_visit:",max_visit)
+        # print("max_visit:",max_visit)
         if max_visit > 25:
             print("switch")
             terminate = True

@@ -51,7 +51,7 @@ class YolowSAMPerception(PerceptionModule):
         
         time1 = time.time()
         yolow_results = self.yolow_model.predict(image,verbose=False,conf=0.3)
-        print("box time:",time.time()-time1)
+        # print("box time:",time.time()-time1)
         
         class_idcs = yolow_results[0].boxes.cls.cpu().numpy() + 1
         scores = yolow_results[0].boxes.conf.cpu().numpy()
@@ -63,12 +63,12 @@ class YolowSAMPerception(PerceptionModule):
             semantic_vis = sam2_results[0].plot()
             # plt.imshow(semantic_vis)
             # plt.show()
-            cv2.imwrite("semantic_vis.png",semantic_vis)
+            # cv2.imwrite("semantic_vis.png",semantic_vis)
             masks = sam2_results[0].masks.data.cpu().numpy()
         else:
             semantic_vis = yolow_results[0].plot()
             masks = []
-        print("yolow time:",time.time()-time1)
+        # print("yolow time:",time.time()-time1)
         if obs.task_observations is None:
             obs.task_observations = {}
 

@@ -190,8 +190,7 @@ class PPOAgent(Agent):
 
         # load checkpoint
         # model_path = skill_config.checkpoint_path
-        # model_path = '/aiarena/gpfs/code/code/OVMM/home-robot/data/checkpoints/ovmm_baseline_home_robot_challenge_2023/nav_to_obj.pth'
-        model_path = "/aiarena/gpfs/code/code/OVMM/home-robot/data/new_checkpoints/ovmm/nav_to_obj_ori_re/keep/latest_keep.pth"
+        model_path = "/data/qinl/backup/gpfs/code/code/OVMM/APRR/home-robot/ckpt/exploration.pth"   # change to your ckpt path
         if model_path:
             ckpt = torch.load(model_path, map_location=self.device)
             print("Load from ",model_path)
@@ -213,9 +212,7 @@ class PPOAgent(Agent):
         self.actor_critic2.to(self.device)
 
         # load checkpoint
-        # model_path2 = '/aiarena/gpfs/code/code/OVMM/home-robot/data/new_checkpoints/ovmm/nav_to_obj_final_exp/keep/latest_keep.pth'
-        # model_path2 = '/aiarena/gpfs/code/code/OVMM/home-robot/data/new_checkpoints/ovmm/nav_to_obj_final_exp_no_alpha/keep/latest_keep.pth'
-        model_path2 =  "/aiarena/gpfs/code/code/OVMM/home-robot/data/new_checkpoints/ovmm/nav_to_obj_final_exp_belta_obj/keep/latest_keep.pth"
+        model_path2 =  "/data/qinl/backup/gpfs/code/code/OVMM/APRR/home-robot/ckpt/last_mile.pth" # change to your ckpt path
         if model_path2:
             ckpt = torch.load(model_path2, map_location=self.device)
             print("Load 2 from ",model_path2)

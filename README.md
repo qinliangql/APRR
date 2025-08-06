@@ -17,6 +17,34 @@ You can directly user the docker image [HomeRobot Docker](https://hub.docker.com
 
 Make sure the conda env "home-robot" is ready
 
+```
+conda activate home-robot
+cd home-robot/src/home-robot
+pip install -e .
+```
+
+Install yoloworld and sam ref [ultralytics](https://docs.ultralytics.com/zh/models/yolo-world/)
 
 
+Set Sim config
+```
+cd home-robot
+bash set.sh
+```
+
+## Eval
+
+Run the baseline
+```
+bash runb.sh
+```
+
+Run APRR
+```
+bash run_rl.sh
+```
+
+## Train
+
+Ref the Home-Robot Train [HomeRobot](https://github.com/facebookresearch/home-robot/blob/home-robot-ovmm-challenge-2024/docs/challenge.md)
 

@@ -73,3 +73,5 @@ projects/slap_manipulation/assets/**
 
 # configs
 projects/habitat_ovmm/configs/agent/generated/*
+
+ckpt/
