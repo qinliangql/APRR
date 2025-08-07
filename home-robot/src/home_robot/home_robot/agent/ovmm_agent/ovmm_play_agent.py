@@ -324,7 +324,7 @@ class PlayOpenVocabManipAgent(ObjectNavAgent):
 
         self.timesteps[0] += 1
         action = None
-        print("self.timesteps[0]:",self.timesteps[0]," self.states[0]:",self.states[0])
+        # print("self.timesteps[0]:",self.timesteps[0]," self.states[0]:",self.states[0])
         while action is None:
             # self.update_point_cloud(obs)
             if self.states[0] == Skill.NAV_TO_OBJ:

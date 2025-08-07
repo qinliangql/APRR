@@ -553,7 +553,7 @@ class OpenVocabManipAgent(ObjectNavAgent):
 
         self.timesteps[0] += 1
         action = None
-        print("self.timesteps[0]:",self.timesteps[0]," self.states[0]:",self.states[0])
+        # print("self.timesteps[0]:",self.timesteps[0]," self.states[0]:",self.states[0])
         collect_over_flag = False
         while action is None:
             # self.update_point_cloud(obs)

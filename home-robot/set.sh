@@ -1,6 +1,6 @@
-ln -s /aiarena/group/eaigroup/ql/docker/home/clip /root/.cache/
-ln -s /aiarena/group/eaigroup/ql/docker/home/torch /root/.cache/
-ln -s /aiarena/group/eaigroup/ql/docker/home/huggingface /root/.cache/
+# ln -s /aiarena/group/eaigroup/ql/docker/home/clip /root/.cache/
+# ln -s /aiarena/group/eaigroup/ql/docker/home/torch /root/.cache/
+# ln -s /aiarena/group/eaigroup/ql/docker/home/huggingface /root/.cache/
 
 
 cp file_keep/nav.py /home-robot/src/third_party/habitat-lab/habitat-lab/habitat/tasks/nav/nav.py

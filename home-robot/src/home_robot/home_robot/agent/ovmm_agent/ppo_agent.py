@@ -518,7 +518,7 @@ class PPOAgent(Agent):
                     _,
                     self.test_recurrent_hidden_states,
                 ) = action_data
-                print("actions 1:",actions)
+                # print("actions 1:",actions)
             else:
                 action_data = self.actor_critic2.act(
                     batch,
@@ -533,7 +533,7 @@ class PPOAgent(Agent):
                     _,
                     self.test_recurrent_hidden_states2,
                 ) = action_data
-                print("actions 2:",actions)
+                # print("actions 2:",actions)
             
 
             #  Make masks not done till reset (end of episode) will be called

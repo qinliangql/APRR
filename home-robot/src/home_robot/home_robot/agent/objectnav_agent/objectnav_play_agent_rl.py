@@ -713,7 +713,7 @@ class ObjectNavAgent(Agent):
         max_visit = torch.max(self.semantic_map_visted_count)
         # print("max_visit:",max_visit)
         if max_visit > 25:
-            print("switch")
+            # print("switch")
             terminate = True
         else:  
             if planner_inputs[0]["found_goal"]:

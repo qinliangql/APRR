@@ -292,7 +292,7 @@ class DiscretePlanner:
                 "Distance (m):",
                 dist_to_short_term_goal * self.map_resolution * CM_TO_METERS,
             )
-            print("Replan:", replan)
+            # print("Replan:", replan)
         # t1 = time.time()
         # print(f"[Planning] get_short_term_goal() time: {t1 - t0}")
 
@@ -589,7 +589,7 @@ class DiscretePlanner:
                     vis_dir=self.vis_dir,
                 )
                 if not np.any(navigable_goal_map):
-                    print("nav frontier")
+                    # print("nav frontier")
                     frontier_map = add_boundary(frontier_map, value=0)
                     navigable_goal_map = frontier_map
 

@@ -7,4 +7,4 @@ python projects/habitat_ovmm/eval_baselines_agent.py \
     --evaluation_type local \
     --agent_type base_s1 \
     --baseline_config_path projects/habitat_ovmm/configs/agent/heuristic_agent.yaml\
-    habitat.dataset.split=val habitat.dataset.episode_indices_range=[100,150] 
+    habitat.dataset.split=minival habitat.dataset.episode_indices_range=[0,10] 

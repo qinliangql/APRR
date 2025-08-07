@@ -258,7 +258,7 @@ class DiscretePlanner:
                 "Distance (m):",
                 dist_to_short_term_goal * self.map_resolution * CM_TO_METERS,
             )
-            print("Replan:", replan)
+            # print("Replan:", replan)
         # t1 = time.time()
         # print(f"[Planning] get_short_term_goal() time: {t1 - t0}")
 

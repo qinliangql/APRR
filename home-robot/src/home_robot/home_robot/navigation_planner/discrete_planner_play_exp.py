@@ -334,13 +334,13 @@ class DiscretePlanner:
                 "Distance (m):",
                 dist_to_short_term_goal * self.map_resolution * CM_TO_METERS,
             )
-            print("Replan:", replan)
+            # print("Replan:", replan)
         # t1 = time.time()
         # print(f"[Planning] get_short_term_goal() time: {t1 - t0}")
 
         # We were not able to find a path to the high-level goal
         if replan and not stop:
-            print("replan:",replan)
+            # print("replan:",replan)
             # Clean collision map
             self.collision_map *= 0   # modify by ql, I think it's wrong to clean collision map
             # Reduce obstacle dilation
@@ -644,7 +644,7 @@ class DiscretePlanner:
                     vis_dir=self.vis_dir,
                 )
                 if not np.any(navigable_goal_map):
-                    print("nav frontier")
+                    # print("nav frontier")
                     frontier_map = add_boundary(frontier_map, value=0)
                     navigable_goal_map = frontier_map
 

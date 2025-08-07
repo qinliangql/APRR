@@ -301,7 +301,7 @@ class PlayOpenVocabManipAgent(ObjectNavAgent):
             
             # time1 = time.time()
             if info_a['found_goal'] or terminate:
-                action, _, terminate = self.nav_to_obj_agent.act(obs, info, semantic_map, info_a)  # exp debu1 + agent2(paper results)
+                action, _, terminate = self.nav_to_obj_agent.act(obs, info, semantic_map, info_a)  # exp debu1 + agent2
             # print("rl time:",time.time()-time1)
             
             # action_rl, _, terminate = self.nav_to_obj_agent.act(obs, info, semantic_map, info_a)  # exp debu2 + agent2
@@ -350,7 +350,7 @@ class PlayOpenVocabManipAgent(ObjectNavAgent):
 
         self.timesteps[0] += 1
         action = None
-        print("self.timesteps[0]:",self.timesteps[0]," self.states[0]:",self.states[0])
+        # print("self.timesteps[0]:",self.timesteps[0]," self.states[0]:",self.states[0])
         time2 = time.time()
         # print("time2 - time1:",time2 - self.time1)
         self.time1 = time2
